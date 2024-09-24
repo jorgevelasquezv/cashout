@@ -1,0 +1,15 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: cashout
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+  r2dbc:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+webclient:
+  base-url: http://localhost:8084

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14.13-alpine
+    container_name: cash-out-db
+    environment:
+      POSTGRES_USER: cash-out
+      POSTGRES_PASSWORD: cash-out
+      POSTGRES_DB: cash-out
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
