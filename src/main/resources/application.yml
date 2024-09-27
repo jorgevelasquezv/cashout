@@ -13,3 +13,9 @@ spring:
     password: ${DATASOURCE_PASSWORD}
 webclient:
   base-url: http://localhost:8084
+springdoc:
+  swagger-ui:
+    path: /cashout-documentation/swagger-ui.html
+  api-docs:
+    path: /cashout-api-docs
+  packages-to-scan: co.com.jorge.cashout
